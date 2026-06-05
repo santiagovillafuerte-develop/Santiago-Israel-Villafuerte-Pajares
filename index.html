@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -33,6 +34,13 @@
             border-bottom: 2px solid #3498db;
             padding-bottom: 10px;
         }
+        h2 {
+            color: #2c3e50;
+            font-size: 1.4rem;
+            margin-top: 0;
+            margin-bottom: 15px;
+            text-align: left;
+        }
         p {
             font-size: 1.1rem;
             color: #555;
@@ -60,6 +68,58 @@
             text-decoration: underline;
             color: #2980b9;
         }
+        .courses-box {
+            margin-top: 25px;
+            background-color: #ffffff;
+            border: 2px solid #3498db;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: left;
+        }
+        .courses-list {
+            margin: 0;
+            padding-left: 20px;
+            font-size: 1.05rem;
+            color: #444;
+        }
+        .courses-list li {
+            margin-bottom: 8px;
+        }
+        /* Nuevo estilo para el cuadro de profesores */
+        .teachers-box {
+            margin-top: 25px;
+            background-color: #ffffff;
+            border: 2px solid #2c3e50;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: left;
+        }
+        .teachers-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            font-size: 1.05rem;
+            color: #444;
+        }
+        .teachers-list li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .teachers-list li::before {
+            content: "👤";
+            margin-right: 10px;
+        }
+        .teachers-list a {
+            color: #3498db;
+            text-decoration: none;
+            margin-left: 5px;
+            font-weight: 500;
+        }
+        .teachers-list a:hover {
+            text-decoration: underline;
+            color: #2980b9;
+        }
         .footer {
             margin-top: 30px;
             font-size: 0.9rem;
@@ -76,9 +136,33 @@
             Hola, tengo 17 años y estudio <span class="highlight">Ciencias de la Computación</span> en la Universidad Católica San Pablo. Entré a esta carrera por el deseo de programar mis propios videojuegos y por las bases de datos que también me gustan.
         </p>
         
-        <!-- Aquí está el nuevo texto con el hipervínculo solicitado -->
         <div class="university-link">
             Universidad Católica San Pablo: <a href="https://ucsp.edu.pe/" target="_blank">UCSP</a>
+        </div>
+
+        <!-- Cuadro de Cursos del primer semestre -->
+        <div class="courses-box">
+            <h2>Formación actual: Primer Semestre (UCSP)</h2>
+            <ul class="courses-list">
+                <li>Introducción a la Ciencia de la Computación</li>
+                <li>Introducción a Vida Universitaria</li>
+                <li>Fundamentos Matemáticos para Computación</li>
+                <li>Fundamentos de Programación</li>
+                <li>Lógica</li>
+                <li>Comunicación I</li>
+            </ul>
+        </div>
+
+        <!-- Nuevo cuadro: Profesores y Referencias solicitado -->
+        <div class="teachers-box">
+            <h2>Profesores y Referencias</h2>
+            <ul class="teachers-list">
+                <li>Ernesto Cuadros-Vargas - <a href="http://socios.spc.org.pe/ecuadros/" target="_blank">Website</a></li>
+                <li>Rosmery Violeta Quispe Zavala - <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
+                <li>Luis Fernando Díaz Basurco - <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
+                <li>Julissa Giuliana Villanueva Llerena - <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
+                <li>Gabriela Ponce Reinoso - <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
+            </ul>
         </div>
 
         <div class="footer">
