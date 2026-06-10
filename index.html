@@ -85,7 +85,6 @@
         .courses-list li {
             margin-bottom: 8px;
         }
-        /* Nuevo estilo para el cuadro de profesores */
         .teachers-box {
             margin-top: 25px;
             background-color: #ffffff;
@@ -120,6 +119,39 @@
             text-decoration: underline;
             color: #2980b9;
         }
+        .classmates-box {
+            margin-top: 25px;
+            background-color: #ffffff;
+            border: 2px solid #e67e22;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: left;
+        }
+        .classmates-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            font-size: 1.05rem;
+            color: #444;
+        }
+        .classmates-list li {
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+        .classmates-list li::before {
+            content: "💻";
+            margin-right: 10px;
+        }
+        .classmates-list a {
+            color: #e67e22;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .classmates-list a:hover {
+            text-decoration: underline;
+            color: #d35400;
+        }
         .footer {
             margin-top: 30px;
             font-size: 0.9rem;
@@ -140,7 +172,6 @@
             Universidad Católica San Pablo: <a href="https://ucsp.edu.pe/" target="_blank">UCSP</a>
         </div>
 
-        <!-- Cuadro de Cursos del primer semestre -->
         <div class="courses-box">
             <h2>Formación actual: Primer Semestre (UCSP)</h2>
             <ul class="courses-list">
@@ -153,7 +184,6 @@
             </ul>
         </div>
 
-        <!-- Nuevo cuadro: Profesores y Referencias solicitado -->
         <div class="teachers-box">
             <h2>Profesores y Referencias</h2>
             <ul class="teachers-list">
@@ -162,6 +192,13 @@
                 <li>Luis Fernando Díaz Basurco - <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
                 <li>Julissa Giuliana Villanueva Llerena - <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
                 <li>Gabriela Ponce Reinoso - <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+
+        <div class="classmates-box">
+            <h2>Compañeros</h2>
+            <ul class="classmates-list">
+                <li><a href="https://skilexz.github.io/Pablo-Joaquin-Gutierrez-Pilco/" target="_blank">Pablo Gutiérrez</a></li>
             </ul>
         </div>
 
